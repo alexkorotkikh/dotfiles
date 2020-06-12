@@ -112,7 +112,6 @@ apps=(
   docker
   intellij-idea
   iterm2
-  paste
   telegram
   visual-studio-code
   vlc
@@ -122,6 +121,3 @@ brew cask install "${apps[@]}"
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize webpquicklook suspicious-package qlvideo
-
-# Link Hammerspoon config
-if [ ! -d ~/.hammerspoon ]; then ln -sfv "$DOTFILES_DIR/etc/hammerspoon/" ~/.hammerspoon; fi
